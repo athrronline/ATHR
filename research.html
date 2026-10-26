@@ -1,0 +1,2278 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fcfbfa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>VASIRA — Digital Marketing Partner | Egypt & Saudi Arabia</title>
+  <meta name="description" content="VASIRA is your full-service digital marketing and growth partner across Egypt and Saudi Arabia. Strategy, creative production, performance media, and measurable business growth.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+/* -------------------------------------------------------------
+   LIGHT & DARK THEME TOKEN SYSTEM (ORGANIC & BORDERLESS)
+------------------------------------------------------------- */
+:root {
+  /* Common Accents */
+  --gold-primary: #c2954a;
+  --gold-soft: #dfb776;
+  --gold-wash: rgba(194, 149, 74, 0.08);
+  --gold-glow: rgba(194, 149, 74, 0.24);
+
+  --radius-full: 9999px;
+  --radius-organic: 40px;
+  --radius-inner: 28px;
+  --wrap-max: min(1140px, calc(100vw - 48px));
+  --header-safe-gap: 125px;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-main: #f9f8f5;
+  --bg-gradient: radial-gradient(circle at 50% 10%, #ffffff 0%, #f7f5f0 50%, #f0ece3 100%);
+  --surface-float: rgba(255, 255, 255, 0.88);
+  --surface-pill: rgba(255, 255, 255, 0.94);
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --stage-bg: #ffffff;
+  
+  --text-primary: #1f2127;
+  --text-secondary: #6e727e;
+  --text-muted: #9598a3;
+
+  --float-shadow-sm: 0 10px 30px -10px rgba(78, 68, 54, 0.06), 0 4px 12px -4px rgba(78, 68, 54, 0.04);
+  --float-shadow-md: 0 24px 60px -16px rgba(78, 68, 54, 0.09), 0 8px 24px -6px rgba(78, 68, 54, 0.05);
+  --float-shadow-lg: 0 36px 90px -20px rgba(78, 68, 54, 0.12), 0 12px 32px -6px rgba(78, 68, 54, 0.06);
+  --float-shadow-hover: 0 44px 100px -18px rgba(194, 149, 74, 0.22), 0 16px 36px -8px rgba(78, 68, 54, 0.08);
+
+  --aura-color-1: rgba(240, 208, 150, 0.38);
+  --aura-color-2: rgba(220, 230, 245, 0.45);
+  --wave-color-1: rgba(160, 205, 235, 0.28);
+  --button-sec-bg: rgba(0, 0, 0, 0.04);
+  --button-sec-hover: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-main: #0a0b0f;
+  --bg-gradient: radial-gradient(circle at 50% 10%, #151821 0%, #0d0e14 50%, #07080b 100%);
+  --surface-float: rgba(18, 21, 30, 0.85);
+  --surface-pill: rgba(20, 24, 34, 0.92);
+  --card-bg: rgba(24, 28, 40, 0.75);
+  --stage-bg: #12151e;
+
+  --text-primary: #f5f3ef;
+  --text-secondary: #a3a8b5;
+  --text-muted: #6f7482;
+
+  --float-shadow-sm: 0 10px 30px -10px rgba(0, 0, 0, 0.4), 0 4px 12px -4px rgba(0, 0, 0, 0.3);
+  --float-shadow-md: 0 24px 60px -16px rgba(0, 0, 0, 0.6), 0 8px 24px -6px rgba(0, 0, 0, 0.4);
+  --float-shadow-lg: 0 36px 90px -20px rgba(0, 0, 0, 0.75), 0 12px 32px -6px rgba(0, 0, 0, 0.5);
+  --float-shadow-hover: 0 44px 100px -18px rgba(194, 149, 74, 0.35), 0 16px 36px -8px rgba(0, 0, 0, 0.6);
+
+  --aura-color-1: rgba(194, 149, 74, 0.18);
+  --aura-color-2: rgba(45, 60, 95, 0.22);
+  --wave-color-1: rgba(45, 75, 110, 0.25);
+  --button-sec-bg: rgba(255, 255, 255, 0.06);
+  --button-sec-hover: rgba(255, 255, 255, 0.12);
+}
+
+/* Hide scrollbars cleanly */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background: var(--bg-main);
+  height: -webkit-fill-available;
+  transition: background 0.4s ease;
+}
+
+body {
+  background: var(--bg-main);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.65;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  -webkit-font-smoothing: antialiased;
+  transition: color 0.4s ease, background 0.4s ease;
+}
+
+/* Floating Atmosphere Lights */
+.float-aura {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.55;
+  will-change: transform;
+  animation: floatAura 20s var(--ease-in-out) infinite alternate;
+  transition: background 0.5s ease;
+}
+.aura-1 {
+  top: -10vw;
+  right: -5vw;
+  width: 50vw;
+  height: 50vw;
+  background: radial-gradient(circle, var(--aura-color-1), transparent 70%);
+}
+.aura-2 {
+  bottom: 5vw;
+  left: -8vw;
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, var(--aura-color-2), transparent 70%);
+  animation-duration: 25s;
+}
+@keyframes floatAura {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(35px, -25px, 0) scale(1.06); }
+  100% { transform: translate3d(-25px, 30px, 0) scale(0.96); }
+}
+
+/* Floating Navigation Bar */
+.nav-container {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 16px) + 8px);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+  padding-inline: 16px;
+}
+.site-header {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 1140px);
+  padding: 10px 24px;
+  background: var(--surface-pill);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border-radius: var(--radius-full);
+  box-shadow: var(--float-shadow-md);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), background 0.4s ease;
+}
+.site-header:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--float-shadow-lg);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  filter: drop-shadow(0 3px 6px var(--gold-glow));
+  transition: transform 0.4s var(--ease-spring);
+}
+.brand-mark path.brand-wing {
+  fill: var(--text-primary);
+  transition: fill 0.3s ease;
+}
+.brand:hover .brand-mark {
+  transform: scale(1.1) rotate(4deg);
+}
+.brand-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--text-primary);
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.desktop-nav a {
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  transition: all 0.25s var(--ease-out);
+  position: relative;
+}
+.desktop-nav a:hover, .desktop-nav a.active {
+  color: var(--text-primary);
+  background: rgba(194, 149, 74, 0.12);
+  transform: translateY(-1px);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ocean Wave Audio Pill Button */
+.ocean-sound-btn {
+  height: 38px;
+  padding: 0 14px;
+  border-radius: var(--radius-full);
+  background: rgba(194, 149, 74, 0.1);
+  color: var(--gold-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+}
+.ocean-sound-btn:hover {
+  background: rgba(194, 149, 74, 0.18);
+  transform: scale(1.03);
+}
+.ocean-sound-btn.playing {
+  background: var(--gold-primary);
+  color: #ffffff;
+  box-shadow: 0 0 16px var(--gold-glow);
+}
+/* Equalizer wave sound bars animation */
+.wave-sound-bars {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2.5px;
+  height: 14px;
+}
+.wave-bar {
+  width: 2.5px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: height 0.2s ease;
+}
+.ocean-sound-btn.playing .wave-bar:nth-child(1) { animation: soundBar 1.2s ease-in-out infinite alternate; }
+.ocean-sound-btn.playing .wave-bar:nth-child(2) { animation: soundBar 0.9s ease-in-out infinite alternate 0.3s; }
+.ocean-sound-btn.playing .wave-bar:nth-child(3) { animation: soundBar 1.4s ease-in-out infinite alternate 0.6s; }
+@keyframes soundBar {
+  0% { height: 3px; }
+  100% { height: 14px; }
+}
+
+/* Theme Toggle Button (Dark / Light) */
+.theme-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(194, 149, 74, 0.1);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+}
+.theme-btn:hover {
+  background: var(--gold-primary);
+  color: #ffffff;
+  transform: scale(1.08) rotate(15deg);
+}
+.theme-btn:active {
+  transform: scale(0.92);
+}
+
+.lang-btn {
+  background: rgba(194, 149, 74, 0.1);
+  color: var(--gold-primary);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+}
+.lang-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile Hamburger Toggle */
+.mobile-menu-btn {
+  display: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--button-sec-bg);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mobile-menu-btn span {
+  width: 18px;
+  height: 2px;
+  background: var(--text-primary);
+  position: absolute;
+  transition: all 0.3s var(--ease-out);
+  border-radius: 2px;
+}
+.mobile-menu-btn span:first-child { transform: translateY(-4px); }
+.mobile-menu-btn span:last-child { transform: translateY(4px); }
+.mobile-menu-btn.active span:first-child { transform: rotate(45deg); }
+.mobile-menu-btn.active span:last-child { transform: rotate(-45deg); }
+
+/* Floating Mobile Menu Sheet */
+.mobile-sheet {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 16px) + 64px);
+  left: 16px;
+  right: 16px;
+  background: var(--surface-float);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border-radius: 28px;
+  box-shadow: var(--float-shadow-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+  transform: translateY(-20px) scale(0.96);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s var(--ease-spring);
+}
+.mobile-sheet.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-sheet a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: var(--radius-full);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-sheet a:active {
+  background: rgba(194, 149, 74, 0.1);
+  color: var(--gold-primary);
+}
+
+/* Floating Deck Layout */
+main.deck {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+}
+
+.surface-viewport {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(var(--header-safe-gap) + env(safe-area-inset-top, 16px));
+  padding-bottom: calc(50px + env(safe-area-inset-bottom, 16px));
+  padding-inline: 24px;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/* Floating Surface Container */
+.floating-surface {
+  width: 100%;
+  max-width: var(--wrap-max);
+  background: var(--surface-float);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: var(--radius-organic);
+  box-shadow: var(--float-shadow-lg);
+  padding: 56px 64px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  will-change: transform, opacity;
+  
+  opacity: 0.25;
+  transform: translateY(32px) scale(0.97);
+  transition: transform 0.65s var(--ease-out), opacity 0.65s var(--ease-out), box-shadow 0.4s var(--ease-out), background 0.4s ease;
+}
+.surface-viewport.is-visible .floating-surface {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.floating-surface:hover {
+  transform: translateY(-4px) scale(1.002);
+  box-shadow: var(--float-shadow-hover);
+}
+
+.floating-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 90% 10%, rgba(255,255,255,0.1), transparent 60%);
+  pointer-events: none;
+}
+
+/* Staggered Children Animation */
+.surface-viewport .animate-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+}
+.surface-viewport.is-visible .animate-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+.surface-viewport.is-visible .delay-1 { transition-delay: 0.1s; }
+.surface-viewport.is-visible .delay-2 { transition-delay: 0.2s; }
+.surface-viewport.is-visible .delay-3 { transition-delay: 0.3s; }
+.surface-viewport.is-visible .delay-4 { transition-delay: 0.4s; }
+
+/* Surface Typography */
+.pill-tag {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gold-wash);
+  color: var(--gold-primary);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  box-shadow: 0 0 8px var(--gold-soft);
+  animation: pulseDot 2.8s var(--ease-in-out) infinite;
+}
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.4); opacity: 1; }
+}
+
+.surface-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2.2rem, 4.2vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.gold-text {
+  color: var(--gold-primary);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.surface-desc {
+  font-size: 1.12rem;
+  line-height: 1.82;
+  color: var(--text-secondary);
+  max-width: 60ch;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* Horizontal Marquee Text Ticker */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 36px;
+  padding: 14px 0;
+  background: rgba(194, 149, 74, 0.05);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+.marquee-content {
+  display: inline-flex;
+  gap: 36px;
+  animation: marqueeScroll 22s linear infinite;
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--gold-primary);
+}
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* V Element Wave & Flame Light Physics */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero-emblem-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 420px;
+  perspective: 1200px;
+}
+
+.wave-ripple {
+  position: absolute;
+  border-radius: 46% 54% 50% 50% / 40% 45% 55% 60%;
+  pointer-events: none;
+  animation: oceanWave 10s ease-in-out infinite alternate;
+}
+.wave-1 {
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, var(--wave-color-1) 0%, rgba(220, 240, 255, 0.04) 60%, transparent 75%);
+  filter: blur(24px);
+  animation-duration: 9s;
+}
+.wave-2 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(244, 218, 168, 0.22) 0%, rgba(255, 245, 225, 0.03) 60%, transparent 75%);
+  filter: blur(35px);
+  animation-duration: 13s;
+  animation-delay: -3s;
+}
+@keyframes oceanWave {
+  0% { transform: rotate(0deg) scale(0.95) translate3d(0, 5px, 0); }
+  50% { transform: rotate(180deg) scale(1.08) translate3d(15px, -15px, 0); }
+  100% { transform: rotate(360deg) scale(0.95) translate3d(-10px, 10px, 0); }
+}
+
+.flame-aura {
+  position: absolute;
+  width: 180px;
+  height: 280px;
+  bottom: 50px;
+  border-radius: 50% 50% 40% 40% / 70% 70% 30% 30%;
+  background: radial-gradient(ellipse at 50% 90%, rgba(255, 240, 190, 0.9) 0%, rgba(223, 183, 118, 0.6) 35%, rgba(255, 140, 50, 0.15) 65%, transparent 80%);
+  filter: blur(18px);
+  pointer-events: none;
+  animation: flameFlicker 3.2s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+}
+@keyframes flameFlicker {
+  0% { transform: scale(0.94) translateY(6px) skewX(-2deg); opacity: 0.75; }
+  30% { transform: scale(1.04) translateY(-4px) skewX(2deg); opacity: 0.95; }
+  60% { transform: scale(0.97) translateY(2px) skewX(-1.5deg); opacity: 0.8; }
+  100% { transform: scale(1.08) translateY(-8px) skewX(2.5deg); opacity: 1; }
+}
+
+.emblem-svg-light {
+  width: min(300px, 90%);
+  height: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 20px 35px rgba(194, 149, 74, 0.3));
+  animation: seaFlameFloat 5.6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transition: transform 0.2s var(--ease-out);
+}
+@keyframes seaFlameFloat {
+  0% { transform: translateY(0px) rotate(0deg) skewX(0deg); }
+  25% { transform: translateY(-8px) rotate(1.4deg) skewX(-1deg); }
+  50% { transform: translateY(-15px) rotate(0deg) skewX(0.8deg); }
+  75% { transform: translateY(-6px) rotate(-1.4deg) skewX(-0.6deg); }
+  100% { transform: translateY(0px) rotate(0deg) skewX(0deg); }
+}
+
+.wing-left-flame {
+  transform-origin: 300px 450px;
+  animation: wingWaveL 5.6s ease-in-out infinite;
+}
+.wing-right-flame {
+  transform-origin: 300px 450px;
+  animation: wingWaveR 5.6s ease-in-out infinite;
+}
+@keyframes wingWaveL {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(3deg) scale(1.02); }
+}
+@keyframes wingWaveR {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(-3deg) scale(1.02); }
+}
+
+.emblem-ray {
+  animation: rayShimmer 3.6s var(--ease-in-out) infinite alternate;
+}
+.emblem-ray:nth-child(2) { animation-delay: 0.8s; }
+.emblem-ray:nth-child(3) { animation-delay: 1.6s; }
+.emblem-ray:nth-child(4) { animation-delay: 2.4s; }
+@keyframes rayShimmer {
+  0% { stroke-opacity: 0.25; stroke-width: 1.5; }
+  100% { stroke-opacity: 0.85; stroke-width: 2.5; }
+}
+
+/* Cinematic Full Image Stage */
+.cinematic-gallery-stage {
+  position: relative;
+  width: 100%;
+  background: var(--stage-bg);
+  border-radius: var(--radius-inner);
+  padding: 24px;
+  box-shadow: var(--float-shadow-md);
+  overflow: hidden;
+  margin-top: 14px;
+  transition: background 0.4s ease;
+}
+.cinematic-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  direction: ltr !important;
+}
+.cinematic-track {
+  display: flex;
+  transition: transform 0.65s var(--ease-out);
+  will-change: transform;
+}
+.cinematic-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cinematic-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  border-radius: 14px;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.15));
+  display: block;
+}
+
+/* Gallery Controls */
+.gallery-controls-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(194, 149, 74, 0.15);
+}
+.gallery-counter {
+  font-family: 'Cinzel', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.gallery-counter span.total {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+.gallery-progress-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  max-width: 260px;
+  margin-inline: 18px;
+}
+.gallery-bar-btn {
+  height: 5px;
+  flex: 1;
+  border-radius: var(--radius-full);
+  background: var(--button-sec-bg);
+  cursor: pointer;
+  transition: all 0.3s var(--ease-spring);
+}
+.gallery-bar-btn.active {
+  background: var(--gold-primary);
+  transform: scaleY(1.4);
+}
+.gallery-action-buttons {
+  display: flex;
+  gap: 10px;
+}
+.nav-arrow-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(194, 149, 74, 0.12);
+  color: var(--gold-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s var(--ease-spring);
+}
+.nav-arrow-btn:active {
+  transform: scale(0.92);
+}
+
+/* Button & Card Islands */
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.pill-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #dfb776 0%, #c2954a 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 16px 36px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 14px 30px rgba(194, 149, 74, 0.32);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s var(--ease-out);
+}
+.pill-btn-primary:active {
+  transform: translateY(0) scale(0.98);
+}
+.pill-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--button-sec-bg);
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 16px 32px;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all 0.25s var(--ease-out);
+}
+.pill-btn-secondary:hover {
+  background: var(--button-sec-hover);
+}
+.pill-btn-secondary:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 6-Grid & Card Islands */
+.island-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.island-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+.island-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+.island-card {
+  background: var(--card-bg);
+  padding: 28px 24px;
+  border-radius: var(--radius-inner);
+  box-shadow: var(--float-shadow-sm);
+  transition: transform 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-out), background 0.4s ease;
+  cursor: default;
+}
+.island-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--float-shadow-md);
+}
+.island-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(194, 149, 74, 0.12);
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.island-num {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.island-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+.island-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.contact-mail-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 36px;
+  background: rgba(194, 149, 74, 0.12);
+  color: var(--gold-primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  margin-bottom: 28px;
+  width: fit-content;
+  transition: transform 0.3s var(--ease-spring), background 0.25s, box-shadow 0.3s;
+}
+.contact-mail-pill:active {
+  transform: translateY(0) scale(0.98);
+}
+.social-pills {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.social-pill {
+  padding: 12px 24px;
+  border-radius: var(--radius-full);
+  background: var(--button-sec-bg);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.25s var(--ease-spring), background 0.2s;
+}
+.social-pill:hover {
+  background: var(--button-sec-hover);
+}
+.social-pill:active {
+  transform: scale(0.96);
+}
+
+.surface-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* Deck Dots */
+.deck-dots {
+  position: fixed;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1000;
+}
+.deck-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(194, 149, 74, 0.25);
+  cursor: pointer;
+  transition: all 0.35s var(--ease-spring);
+}
+.deck-dot.active {
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--gold-primary);
+  box-shadow: 0 4px 12px var(--gold-glow);
+}
+
+/* Arabic RTL Adjustments */
+html[dir="rtl"] body {
+  font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html[dir="rtl"] .surface-title,
+html[dir="rtl"] .island-title,
+html[dir="rtl"] .brand-text,
+html[dir="rtl"] .marquee-content,
+html[dir="rtl"] .gallery-counter {
+  font-family: 'Amiri', serif;
+  letter-spacing: 0;
+}
+html[dir="rtl"] .pill-tag {
+  letter-spacing: 0;
+}
+html[dir="rtl"] .deck-dots {
+  right: auto;
+  left: 24px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Responsive Optimization */
+@media (max-width: 992px) {
+  :root {
+    --header-safe-gap: 82px;
+  }
+
+  html {
+    scroll-snap-type: none;
+  }
+  .surface-viewport {
+    scroll-snap-align: none;
+    min-height: auto;
+    padding-top: calc(var(--header-safe-gap) + env(safe-area-inset-top, 16px));
+    padding-bottom: 40px;
+    padding-inline: 14px;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+  .deck-dots {
+    display: none;
+  }
+
+  .floating-surface {
+    padding: 34px 20px;
+    border-radius: 28px;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .animate-item {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: left;
+  }
+  html[dir="rtl"] .hero-split {
+    text-align: right;
+  }
+
+  .hero-emblem-wrap {
+    height: 290px;
+    order: -1;
+  }
+  .emblem-svg-light {
+    width: 220px;
+  }
+  .wave-1 { width: 260px; height: 260px; }
+  .wave-2 { width: 300px; height: 300px; }
+  .flame-aura { width: 140px; height: 200px; }
+
+  .surface-title {
+    font-size: clamp(2rem, 8.5vw, 2.7rem);
+    line-height: 1.18;
+  }
+  .surface-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .cinematic-gallery-stage {
+    padding: 14px;
+    border-radius: 22px;
+  }
+  .cinematic-slide img {
+    max-height: 270px;
+    border-radius: 10px;
+  }
+  .gallery-controls-bottom {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+  .gallery-progress-pills {
+    order: 3;
+    max-width: 100%;
+    width: 100%;
+    margin-inline: 0;
+  }
+
+  .island-grid-6, .island-grid-3, .island-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .island-card {
+    padding: 24px 20px;
+    border-radius: 20px;
+  }
+
+  .pill-btn-primary, .pill-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+  .contact-mail-pill {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.15rem;
+    padding: 14px 20px;
+  }
+  .social-pills {
+    width: 100%;
+  }
+  .social-pill {
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+    padding: 10px 14px;
+  }
+
+  .surface-footer {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-header {
+    padding: 8px 12px;
+  }
+  .brand-text {
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
+  }
+  .ocean-sound-btn span.sound-text {
+    display: none; /* Icon and bars only on tiny screens */
+  }
+  .hero-emblem-wrap {
+    height: 240px;
+  }
+  .emblem-svg-light {
+    width: 180px;
+  }
+  .surface-title {
+    font-size: 1.85rem;
+  }
+}
+  
+/* -------------------------------------------------------------
+   CUSTOM MOBILE OPTIMIZED LAYOUT (iOS, Android, Responsive)
+------------------------------------------------------------- */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --header-safe-gap: calc(env(safe-area-inset-top, 16px) + 64px);
+    --bottom-safe-gap: calc(env(safe-area-inset-bottom, 20px) + 76px);
+  }
+
+  html, body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    overscroll-behavior-y: none;
+  }
+
+  /* Safe Padding for Deck Viewport on Mobile */
+  .surface-viewport {
+    padding-top: var(--header-safe-gap);
+    padding-bottom: var(--bottom-safe-gap);
+    padding-inline: 16px;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Floating Deck Card Mobile Tweaks */
+  .floating-surface {
+    padding: 28px 18px 24px;
+    border-radius: 26px;
+    margin-inline: auto;
+    width: 100%;
+    box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.08);
+  }
+  [data-theme="dark"] .floating-surface {
+    box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.65);
+  }
+
+  /* Compact Emblem to avoid mobile scroll crowding */
+  .hero-emblem-wrap {
+    height: 220px;
+    margin-bottom: 8px;
+    order: -1;
+  }
+  .emblem-svg-light {
+    width: 165px;
+  }
+  .wave-1 { width: 210px; height: 210px; }
+  .wave-2 { width: 250px; height: 250px; }
+  .flame-aura { width: 110px; height: 160px; }
+
+  /* Mobile Typography */
+  .surface-title {
+    font-size: clamp(1.85rem, 7.5vw, 2.35rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+  .surface-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 20px;
+  }
+  .surface-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 12px;
+  }
+
+  /* Hero action pills stacked naturally for thumb reach */
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .pill-btn-primary, .pill-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 15px 22px;
+    font-size: 0.98rem;
+    border-radius: 100px;
+    box-shadow: 0 8px 20px -4px rgba(194, 149, 74, 0.28);
+  }
+
+  /* Horizontal Ticker Mobile Padding */
+  .ticker-wrap {
+    margin: 20px -18px 0;
+    padding: 12px 0;
+    border-radius: 18px;
+  }
+  .ticker-item {
+    font-size: 0.82rem;
+  }
+
+  /* Mobile Gallery 100% Uncropped Stage */
+  .cinematic-gallery-stage {
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .cinematic-viewport {
+    border-radius: 14px;
+    min-height: 280px;
+  }
+  .cinematic-slide {
+    height: 310px;
+    padding: 6px;
+  }
+  .cinematic-slide img {
+    max-height: 298px;
+    object-fit: contain !important;
+  }
+  .gallery-controls-bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .gallery-ctrl-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.15rem;
+  }
+  .gallery-progress-pills {
+    order: 3;
+    width: 100%;
+    margin-inline: 0;
+    justify-content: center;
+    gap: 5px;
+  }
+  .gallery-bar-btn {
+    height: 4px;
+    min-width: 20px;
+    flex: 1;
+  }
+
+  /* Cards Grid Mobile Flow */
+  .island-grid-6, .island-grid-3, .island-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .island-card {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+  .card-icon-pill {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 12px;
+  }
+  .card-icon-pill svg {
+    width: 20px;
+    height: 20px;
+  }
+  .card-title {
+    font-size: 1.12rem;
+    margin-bottom: 6px;
+  }
+  .card-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  /* Dedicated Mobile Floating Glass Tab Bar */
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: calc(env(safe-area-inset-bottom, 12px) + 8px);
+    left: 14px;
+    right: 14px;
+    height: 62px;
+    background: var(--nav-bg);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border-radius: 100px;
+    box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.22);
+    z-index: 998;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6px;
+    border: 1px solid var(--border-soft);
+  }
+  [data-theme="dark"] .mobile-bottom-bar {
+    background: rgba(18, 20, 29, 0.88);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 44px -8px rgba(0, 0, 0, 0.7);
+  }
+
+  .mob-tab-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 16px;
+    transition: all 0.25s var(--ease-spring);
+    flex: 1;
+    touch-action: manipulation;
+  }
+  .mob-tab-icon {
+    width: 22px;
+    height: 22px;
+    stroke-width: 1.9;
+    transition: transform 0.25s var(--ease-spring);
+  }
+  .mob-tab-btn.active {
+    color: var(--gold-primary);
+    transform: translateY(-2px);
+  }
+  .mob-tab-btn.active .mob-tab-icon {
+    transform: scale(1.12);
+  }
+
+  /* Header compacting for thumb reach */
+  .site-header {
+    height: 54px;
+    padding: 6px 14px;
+    top: calc(env(safe-area-inset-top, 12px) + 6px);
+    left: 12px;
+    right: 12px;
+  }
+  .brand-text {
+    font-size: 0.98rem;
+    letter-spacing: 0.16em;
+  }
+  .ocean-sound-btn {
+    padding: 6px 10px;
+    height: 36px;
+  }
+  .theme-btn, .lang-btn, .mobile-menu-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.88rem;
+  }
+
+  /* Contact slide on mobile */
+  .contact-mail-pill {
+    font-size: 1.05rem;
+    padding: 13px 18px;
+    border-radius: 100px;
+    word-break: break-all;
+  }
+  .social-pills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .social-pill {
+    padding: 11px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .ocean-sound-btn span.sound-text {
+    display: none;
+  }
+  .surface-title {
+    font-size: 1.68rem;
+  }
+  .hero-emblem-wrap {
+    height: 190px;
+  }
+  .emblem-svg-light {
+    width: 140px;
+  }
+  .cinematic-slide {
+    height: 260px;
+  }
+  .mob-tab-label {
+    font-size: 0.62rem;
+  }
+}
+
+
+/* Responsive refinements for touch devices and Safari */
+html { scroll-snap-type:none; scroll-padding-top:calc(96px + env(safe-area-inset-top,0px)); }
+body { min-height:100vh; min-height:100svh; }
+main.deck { width:100%; }
+button { font-family:inherit; }
+a, button { touch-action:manipulation; }
+a:focus-visible, button:focus-visible { outline:3px solid var(--gold-primary) !important; outline-offset:4px; }
+.site-header { gap:12px; }
+.nav-actions { flex-shrink:0; }
+.theme-btn,.lang-btn,.mobile-menu-btn,.ocean-sound-btn,.nav-arrow-btn { min-width:44px; min-height:44px; }
+.lang-btn { width:auto; padding-inline:12px; }
+.mobile-sheet { visibility:hidden; max-height:calc(100vh - 160px); max-height:calc(100dvh - 160px - env(safe-area-inset-top,0px)); overflow-y:auto; }
+.mobile-sheet.open { visibility:visible; }
+.surface-viewport { min-height:0; padding-block:36px; scroll-snap-align:none; scroll-snap-stop:normal; }
+.surface-viewport:first-child { padding-top:calc(118px + env(safe-area-inset-top,0px)); }
+.floating-surface,.surface-viewport .animate-item { opacity:1; transform:none; }
+.floating-surface { padding:clamp(28px,4vw,56px); }
+.floating-surface:hover { transform:none; }
+.surface-title,.pill-tag,.contact-mail-pill { overflow-wrap:anywhere; }
+.island-card,.hero-split > * { min-width:0; }
+.cinematic-viewport { touch-action:pan-y pinch-zoom; }
+.gallery-bar-btn { position:relative; height:44px; min-width:20px; background:transparent; border-radius:0; cursor:pointer; }
+.gallery-bar-btn::after { content:''; position:absolute; inset:20px 0; border-radius:99px; background:var(--text-muted); opacity:.4; }
+.gallery-bar-btn.active { background:transparent; }
+.gallery-bar-btn.active::after { background:var(--gold-primary); opacity:1; }
+.gallery-pause { min-height:44px; padding:8px 14px; border-radius:99px; background:var(--button-sec-bg); color:var(--text-primary); cursor:pointer; }
+[data-theme="light"] { --text-muted:#707580; }
+@media(max-width:1279px) {
+ .desktop-nav,.deck-dots { display:none; }
+ .mobile-menu-btn { display:flex; }
+}
+@media(min-width:768px) and (max-width:1100px) {
+ .island-grid-6,.island-grid-3,.island-grid-2 { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .hero-split { grid-template-columns:minmax(0,1.4fr) minmax(0,1fr); gap:24px; align-items:center; }
+ .hero-emblem-wrap { order:0; }
+ .surface-title { font-size:clamp(2rem,4vw,2.8rem); }
+}
+@media(max-width:992px) {
+ body { background-attachment:scroll; padding-bottom:calc(92px + env(safe-area-inset-bottom,0px)); }
+ .surface-viewport { min-height:0; padding:14px 20px; }
+ .surface-viewport:first-child { padding-top:calc(96px + env(safe-area-inset-top,0px)); }
+ .floating-surface { max-width:100%; padding:30px 24px; }
+ .mobile-bottom-bar { background:var(--surface-pill); left:max(14px,env(safe-area-inset-left,0px)); right:max(14px,env(safe-area-inset-right,0px)); }
+ .mob-tab-btn { min-height:48px; min-width:0; padding-inline:4px; color:var(--text-secondary); }
+ .nav-container { padding-left:max(12px,env(safe-area-inset-left,0px)); padding-right:max(12px,env(safe-area-inset-right,0px)); }
+ .site-header { height:auto; min-height:60px; padding:8px 10px; gap:6px; }
+ .nav-actions { gap:2px; }
+ .ocean-sound-btn .sound-text { display:none; }
+ .ocean-sound-btn { justify-content:center; padding-inline:10px; }
+ .float-aura { animation:none; filter:blur(50px); }
+ .cinematic-slide { height:clamp(240px,46vw,420px); }
+ .cinematic-slide img { max-height:100%; max-width:100%; }
+}
+@media(max-width:480px) {
+ .surface-viewport { padding-inline:12px; }
+ .floating-surface { padding:26px 20px; border-radius:24px; }
+ .hero-emblem-wrap { order:0; height:180px; margin:0; }
+ .hero-split { gap:24px; }
+ .brand { gap:5px; }
+ .brand-text { font-size:.85rem; letter-spacing:.1em; }
+ .brand-mark { width:23px; height:23px; }
+ .site-header { padding-inline:8px; }
+ .surface-title { font-size:clamp(1.75rem,7.5vw,2.25rem); }
+ .surface-desc { font-size:1rem; }
+ .pill-tag { font-size:.65rem; letter-spacing:.08em; padding:8px 12px; }
+ .contact-mail-pill { font-size:clamp(.85rem,3.8vw,1.05rem); padding-inline:10px; word-break:normal; }
+}
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+</style>
+</head>
+
+<body>
+  <div class="float-aura aura-1"></div>
+  <div class="float-aura aura-2"></div>
+
+  <!-- Minimal Floating Header with Ocean Waves Audio Toggle -->
+  <div class="nav-container">
+    <header class="site-header">
+      <a href="#surface-home" class="brand" aria-label="VASIRA Home">
+        <svg viewBox="0 0 100 100" class="brand-mark" aria-hidden="true">
+          <path class="brand-wing" d="M12 14 H32 L50 78 L42 84Z"/>
+          <path class="brand-wing" d="M88 14 H68 L50 78 L58 84Z"/>
+          <path d="M48 76 H52 V94 H48 Z" fill="var(--gold-primary)"/>
+        </svg>
+        <span class="brand-text">VASIRA</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#surface-home" class="nav-anchor active">Home</a>
+        <a href="#surface-challenge" class="nav-anchor" data-t="navChallenge">Challenge</a>
+        <a href="#surface-services" class="nav-anchor" data-t="navServices">Services</a>
+        <a href="#surface-gallery" class="nav-anchor" data-t="navGallery">World</a>
+        <a href="#surface-why" class="nav-anchor" data-t="navWhy">Why Us</a>
+        <a href="#surface-markets" class="nav-anchor" data-t="nav4">Markets</a>
+        <a href="#surface-contact" class="nav-anchor" data-t="nav5">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Ocean Sound Synthesizer Button -->
+        <button class="ocean-sound-btn" id="oceanSoundBtn" type="button" aria-label="Play relaxing ocean sea waves sound" aria-pressed="false">
+          <span class="wave-sound-bars">
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+            <span class="wave-bar"></span>
+          </span>
+          <span class="sound-text" data-t="soundLabel">Waves</span>
+        </button>
+
+        <!-- Theme Switcher (Dark / Light) -->
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle Dark and Light Mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <button class="lang-btn" id="langBtn" type="button">عربي</button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-controls="mobileSheet" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+  </div>
+
+  
+  <!-- Dedicated Mobile Floating Glass Tab Bar -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar" aria-label="Mobile Navigation">
+    <a href="#surface-home" class="mob-tab-btn active" data-target="surface-home">
+      <svg class="mob-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      <span class="mob-tab-label" data-t="mobTabHome">Home</span>
+    </a>
+    <a href="#surface-services" class="mob-tab-btn" data-target="surface-services">
+      <svg class="mob-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+      <span class="mob-tab-label" data-t="mobTabServices">Services</span>
+    </a>
+    <a href="#surface-gallery" class="mob-tab-btn" data-target="surface-gallery">
+      <svg class="mob-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <span class="mob-tab-label" data-t="mobTabWorld">World</span>
+    </a>
+    <a href="#surface-why" class="mob-tab-btn" data-target="surface-why">
+      <svg class="mob-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      <span class="mob-tab-label" data-t="mobTabWhy">Why Us</span>
+    </a>
+    <a href="#surface-contact" class="mob-tab-btn" data-target="surface-contact">
+      <svg class="mob-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      <span class="mob-tab-label" data-t="mobTabContact">Contact</span>
+    </a>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-sheet" id="mobileSheet">
+    <a href="#surface-home" class="m-link">Home <span>↗</span></a>
+    <a href="#surface-challenge" class="m-link" data-t="navChallenge">The Challenge <span>↗</span></a>
+    <a href="#surface-services" class="m-link" data-t="navServices">Services System <span>↗</span></a>
+    <a href="#surface-gallery" class="m-link" data-t="navGallery">The VASIRA World <span>↗</span></a>
+    <a href="#surface-why" class="m-link" data-t="navWhy">Why VASIRA <span>↗</span></a>
+    <a href="#surface-markets" class="m-link" data-t="nav4">Markets <span>↗</span></a>
+    <a href="#surface-contact" class="m-link" data-t="nav5">Contact <span>↗</span></a>
+  </div>
+
+  <!-- Desktop Deck Pagination Dots -->
+  <aside class="deck-dots" aria-label="Section indicators">
+    <button type="button" class="deck-dot active" data-target="surface-home" aria-label="Go to home"></button>
+    <button type="button" class="deck-dot" data-target="surface-challenge" aria-label="Go to challenge"></button>
+    <button type="button" class="deck-dot" data-target="surface-services" aria-label="Go to services"></button>
+    <button type="button" class="deck-dot" data-target="surface-gallery" aria-label="Go to gallery"></button>
+    <button type="button" class="deck-dot" data-target="surface-why" aria-label="Go to why"></button>
+    <button type="button" class="deck-dot" data-target="surface-markets" aria-label="Go to markets"></button>
+    <button type="button" class="deck-dot" data-target="surface-contact" aria-label="Go to contact"></button>
+  </aside>
+
+  <!-- Deck Surfaces -->
+  <main class="deck">
+
+    <!-- SURFACE 1: Hero -->
+    <section class="surface-viewport" id="surface-home">
+      <article class="floating-surface">
+        <div class="hero-split">
+          <div>
+            <div class="pill-tag animate-item delay-1">
+              <span class="pill-dot"></span>
+              <span data-t="heroTag">DIGITAL MARKETING PARTNER · EGYPT & SAUDI ARABIA</span>
+            </div>
+            <h1 class="surface-title animate-item delay-2">
+              <span data-t="hero1">Your Partner in</span><br>
+              <span class="gold-text" data-t="hero2">Digital Growth.</span>
+            </h1>
+            <p class="surface-desc animate-item delay-3" data-t="heroSub">
+              We turn marketing from a daily operational task into a transparent, high-performing growth engine powered by strategy, data, and measurable business ROI.
+            </p>
+            <div class="hero-actions animate-item delay-4">
+              <a href="#surface-services" class="pill-btn-primary">
+                <span data-t="heroBtnServices">Explore Solutions</span>
+                <span>↗</span>
+              </a>
+              <a href="#surface-gallery" class="pill-btn-secondary">
+                <span data-t="heroBtnGallery">Brand Identity World</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Flame Light & Sea Wave Moving V Emblem -->
+          <div class="hero-emblem-wrap animate-item delay-2" id="emblemContainer">
+            <div class="wave-ripple wave-1"></div>
+            <div class="wave-ripple wave-2"></div>
+            <div class="flame-aura"></div>
+
+            <svg class="emblem-svg-light" id="emblemSvg" viewBox="0 0 600 650" aria-hidden="true">
+              <defs>
+                <linearGradient id="goldStemLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fae4be"/>
+                  <stop offset="50%" stop-color="#dfb776"/>
+                  <stop offset="100%" stop-color="#a4752c"/>
+                </linearGradient>
+                <linearGradient id="wingSoftL" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="50%" stop-color="#fdfbf7"/>
+                  <stop offset="100%" stop-color="#ded5c4"/>
+                </linearGradient>
+                <linearGradient id="wingSoftR" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#ffffff"/>
+                  <stop offset="50%" stop-color="#fdfbf7"/>
+                  <stop offset="100%" stop-color="#ded5c4"/>
+                </linearGradient>
+              </defs>
+              <g>
+                <path class="emblem-ray" d="M300 450 L50 30" stroke="url(#goldStemLight)" stroke-width="2"/>
+                <path class="emblem-ray" d="M300 450 L120 30" stroke="url(#goldStemLight)" stroke-width="2"/>
+                <path class="emblem-ray" d="M300 450 L480 30" stroke="url(#goldStemLight)" stroke-width="2"/>
+                <path class="emblem-ray" d="M300 450 L550 30" stroke="url(#goldStemLight)" stroke-width="2"/>
+              </g>
+              <g class="wing-left-flame">
+                <path d="M140 60 L210 60 L300 450 L280 465 Z" fill="url(#wingSoftL)"/>
+              </g>
+              <g class="wing-right-flame">
+                <path d="M460 60 L390 60 L300 450 L320 465 Z" fill="url(#wingSoftR)"/>
+              </g>
+              <circle cx="300" cy="450" r="14" fill="url(#goldStemLight)"/>
+              <rect x="294" y="460" width="12" height="130" fill="url(#goldStemLight)" rx="6"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Marquee Ticker -->
+        <div class="marquee-container animate-item delay-4" aria-hidden="true">
+          <div class="marquee-content">
+            <span>STRATEGY & RESEARCH</span>
+            <span>✦</span>
+            <span>PAID MEDIA BUYING</span>
+            <span>✦</span>
+            <span>CREATIVE PRODUCTION</span>
+            <span>✦</span>
+            <span>SOCIAL MEDIA ENGINE</span>
+            <span>✦</span>
+            <span>SEARCH & CRM</span>
+            <span>✦</span>
+            <span>EGYPT & SAUDI ARABIA</span>
+            <span>✦</span>
+            <span>STRATEGY & RESEARCH</span>
+            <span>✦</span>
+            <span>PAID MEDIA BUYING</span>
+            <span>✦</span>
+            <span>CREATIVE PRODUCTION</span>
+            <span>✦</span>
+            <span>SOCIAL MEDIA ENGINE</span>
+            <span>✦</span>
+            <span>SEARCH & CRM</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURFACE 2: The Challenge & The Solution -->
+    <section class="surface-viewport" id="surface-challenge">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="chalTag">01 / MARKET CHALLENGE & RESOLUTION</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="chalTitle1">Overcoming Marketing Friction.</span> <span class="gold-text" data-t="chalTitle2">The VASIRA System.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="chalDesc">
+          Brand owners face critical questions daily: Are ads profitable? Where does growth come from? Why isn't content engaging? VASIRA resolves these challenges through an end-to-end growth framework.
+        </p>
+
+        <div class="island-grid-3">
+          <div class="island-card animate-item delay-2">
+            <div class="island-icon">◎</div>
+            <h3 class="island-title" data-t="c1h">Paid Ads & Media Buying</h3>
+            <p class="island-desc" data-t="c1p">Precise funnel structuring, continuous A/B optimization, and retargeting that maximizes ROAS.</p>
+          </div>
+          <div class="island-card animate-item delay-3">
+            <div class="island-icon">▶</div>
+            <h3 class="island-title" data-t="c2h">Engaging Content Engine</h3>
+            <p class="island-desc" data-t="c2p">Short-form videos (Reels, TikTok), hooks, copywriting, and storytelling that turns views into loyalty.</p>
+          </div>
+          <div class="island-card animate-item delay-4">
+            <div class="island-icon">⌁</div>
+            <h3 class="island-title" data-t="c3h">Growth & Analytics</h3>
+            <p class="island-desc" data-t="c3p">Transparent metrics, customer acquisition costs (CAC), conversion tracking, and data-driven insights.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURFACE 3: Full-Service Marketing Architecture -->
+    <section class="surface-viewport" id="surface-services">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="servTag">02 / FULL-SERVICE MARKETING</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="servTitle1">All Marketing Solutions.</span> <span class="gold-text" data-t="servTitle2">Under One Roof.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="servDesc">
+          A seamless, synchronized marketing suite giving every campaign, channel, and visual asset a unified direction.
+        </p>
+
+        <div class="island-grid-6">
+          <div class="island-card animate-item delay-1">
+            <div class="island-num">01</div>
+            <h3 class="island-title" data-t="s1t">Strategy</h3>
+            <p class="island-desc" data-t="s1d">Market Research • SWOT • STP • Personas • Brand Positioning</p>
+          </div>
+          <div class="island-card animate-item delay-2">
+            <div class="island-num">02</div>
+            <h3 class="island-title" data-t="s2t">Social Media</h3>
+            <p class="island-desc" data-t="s2d">Full Management • Community Care • Editorial Calendar • Social Listening</p>
+          </div>
+          <div class="island-card animate-item delay-3">
+            <div class="island-num">03</div>
+            <h3 class="island-title" data-t="s3t">Creative & Copy</h3>
+            <p class="island-desc" data-t="s3d">Brand Identity • Visual Key Concepts • Conversion Copywriting • Art Direction</p>
+          </div>
+          <div class="island-card animate-item delay-4">
+            <div class="island-num">04</div>
+            <h3 class="island-title" data-t="s4t">Production</h3>
+            <p class="island-desc" data-t="s4d">Product & Lifestyle Photography • Commercial Video • Motion Graphics</p>
+          </div>
+          <div class="island-card animate-item delay-4">
+            <div class="island-num">05</div>
+            <h3 class="island-title" data-t="s5t">Performance</h3>
+            <p class="island-desc" data-t="s5d">Media Buying • Meta, Google & TikTok Ads • Advanced Retargeting • ROAS Optimization</p>
+          </div>
+          <div class="island-card animate-item delay-4">
+            <div class="island-num">06</div>
+            <h3 class="island-title" data-t="s6t">Search & Growth</h3>
+            <p class="island-desc" data-t="s6d">SEO Dominance • CRM Automations • Email Marketing • Influencer Partnerships</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURFACE 4: The VASIRA World (Unclipped Art Gallery) -->
+    <section class="surface-viewport" id="surface-gallery">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="workSmall">03 / THE VASIRA WORLD</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="work1">A visual world</span> <span class="gold-text" data-t="work2">that feels alive.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="workBody" style="margin-bottom: 8px;">
+          A moving gallery of VASIRA's original brand imagery. Every artwork is shown in full, exactly as designed.
+        </p>
+
+        <!-- Full-view Stage Carousel (Zero Cropping) -->
+        <div class="cinematic-gallery-stage animate-item delay-4">
+          <div class="cinematic-viewport" id="galleryViewport">
+            <div class="cinematic-track" id="galleryTrack">
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_3.jpg" alt="VASIRA Visual Artwork 01" loading="lazy" />
+              </figure>
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_4.jpg" alt="VASIRA Visual Artwork 02" loading="lazy" />
+              </figure>
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_5.jpg" alt="VASIRA Visual Artwork 03" loading="lazy" />
+              </figure>
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_6.jpg" alt="VASIRA Visual Artwork 04" loading="lazy" />
+              </figure>
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_7.jpg" alt="VASIRA Visual Artwork 05" loading="lazy" />
+              </figure>
+              <figure class="cinematic-slide">
+                <img src="./assets/photo_8.jpg" alt="VASIRA Visual Artwork 06" loading="lazy" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="gallery-controls-bottom">
+            <div class="gallery-counter">
+              <span id="slideCurrent">01</span>
+              <span class="total">/ 06</span>
+            </div>
+
+            <div class="gallery-progress-pills" id="galleryProgressPills"></div>
+
+            <div class="gallery-action-buttons">
+              <button class="nav-arrow-btn" id="galleryPrev" type="button" aria-label="Previous artwork">←</button>
+              <button class="nav-arrow-btn" id="galleryNext" type="button" aria-label="Next artwork">→</button>
+            </div>
+          </div>
+        </div>
+
+        <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500; margin-top: 14px;" data-t="galleryNote">
+          These are VASIRA brand identity concepts, not client case studies.
+        </p>
+      </article>
+    </section>
+
+    <!-- SURFACE 5: Why VASIRA -->
+    <section class="surface-viewport" id="surface-why">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="whyTag">04 / WHY PARTNER WITH VASIRA</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="whyTitle1">Creativity + Performance.</span> <span class="gold-text" data-t="whyTitle2">In Harmony.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="whyDesc">
+          We don't choose between aesthetic excellence and commercial conversion. We deliver both simultaneously through dedicated specialist talent.
+        </p>
+
+        <div class="island-grid-3">
+          <div class="island-card animate-item delay-1">
+            <div class="island-icon">✦</div>
+            <h3 class="island-title" data-t="w1t">Creativity Meets ROI</h3>
+            <p class="island-desc" data-t="w1d">Balancing aesthetic design with bottom-line revenue outcomes.</p>
+          </div>
+          <div class="island-card animate-item delay-2">
+            <div class="island-icon">◈</div>
+            <h3 class="island-title" data-t="w2t">Data-Driven Insights</h3>
+            <p class="island-desc" data-t="w2d">Every decision originates from genuine customer intelligence and analytics.</p>
+          </div>
+          <div class="island-card animate-item delay-3">
+            <div class="island-icon">↗</div>
+            <h3 class="island-title" data-t="w3t">Measurable Outcomes</h3>
+            <p class="island-desc" data-t="w3d">Clear business KPIs, verifiable leads, and sustainable brand equity.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURFACE 6: Markets -->
+    <section class="surface-viewport" id="surface-markets">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="marLabel">05 / MARKETS</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="mar1">Egyptian instinct.</span><br>
+          <span class="gold-text" data-t="mar2">Saudi ambition.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="marBody">
+          VASIRA bridges regional cultural intelligence. We combine dynamic cultural resonance in Egypt with high-tier prestige positioning in Saudi Arabia.
+        </p>
+
+        <div class="island-grid-2">
+          <div class="island-card animate-item delay-3">
+            <span class="island-num">01</span>
+            <h3 class="island-title" data-t="egypt">Egypt</h3>
+            <p class="island-desc" data-t="egyptBody">Fast-paced, culturally fluent digital narratives and agile execution that captures broad engagement.</p>
+          </div>
+          <div class="island-card animate-item delay-4">
+            <span class="island-num">02</span>
+            <h3 class="island-title" data-t="saudi">Saudi Arabia</h3>
+            <p class="island-desc" data-t="saudiBody">Elevated, visionary creative systems engineered to resonate with the Kingdom's thriving enterprise market.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- SURFACE 7: Contact -->
+    <section class="surface-viewport" id="surface-contact">
+      <article class="floating-surface">
+        <div class="pill-tag animate-item delay-1">
+          <span class="pill-dot"></span>
+          <span data-t="contactLabel">06 / LET'S GROW TOGETHER</span>
+        </div>
+        <h2 class="surface-title animate-item delay-2">
+          <span data-t="contact1">Let's build your next</span> <span class="gold-text" data-t="contact2">success story.</span>
+        </h2>
+        <p class="surface-desc animate-item delay-3" data-t="contactBody">
+          You have the vision. We have the strategic expertise and execution engine to make it a reality.
+        </p>
+
+        <a href="mailto:Vasiramarketing@gmail.com" class="contact-mail-pill animate-item delay-3">
+          <span>Vasiramarketing@gmail.com</span>
+          <span>↗</span>
+        </a>
+
+        <div class="social-pills animate-item delay-4">
+          <a href="https://www.linkedin.com/in/vasira-marketing-17721b438" target="_blank" rel="noopener" class="social-pill">LinkedIn ↗</a>
+          <a href="https://www.instagram.com/vasiramarketing/" target="_blank" rel="noopener" class="social-pill">Instagram ↗</a>
+          <a href="https://www.facebook.com/Vasiramarketing" target="_blank" rel="noopener" class="social-pill">Facebook ↗</a>
+        </div>
+
+        <footer class="surface-footer animate-item delay-4">
+          <div>© <span id="currentYear"></span> VASIRA Agency.</div>
+          <div style="color:var(--gold-primary); font-weight:700; letter-spacing:0.1em;" data-t="footer">GROWTH BEGINS WITH VISION</div>
+          <a href="#surface-home" class="nav-anchor" style="color:var(--text-muted); text-decoration:none;">BACK TO TOP ↑</a>
+        </footer>
+      </article>
+    </section>
+
+  </main>
+
+  <script>
+    const safeStorage = { get(key) { try { return localStorage.getItem(key); } catch (_) { return null; } }, set(key,value) { try { localStorage.setItem(key,value); } catch (_) {} } };
+    // Theme Management (Dark / Light with LocalStorage & OS Auto-Detection)
+    const htmlEl = document.documentElement;
+    const themeBtn = document.getElementById('themeBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    function applyTheme(theme) {
+      htmlEl.setAttribute('data-theme', theme);
+      safeStorage.set('vasira_theme', theme);
+      if (theme === 'dark') {
+        themeIcon.textContent = '☀️';
+        if (metaThemeColor) metaThemeColor.setAttribute('content', '#0a0b0f');
+      } else {
+        themeIcon.textContent = '🌙';
+        if (metaThemeColor) metaThemeColor.setAttribute('content', '#fcfbfa');
+      }
+    }
+
+    const savedTheme = safeStorage.get('vasira_theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+
+    themeBtn?.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme') || 'light';
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
+
+    // Web Audio API Procedural Ocean Sea Waves Generator (Zero external audio file needed, works offline & on mobile)
+    let audioCtx = null;
+    let oceanGainNode = null;
+    let isPlayingOcean = false;
+    let waveLfo = null;
+    let oceanSources = [];
+
+    const oceanBtn = document.getElementById('oceanSoundBtn');
+
+    function initOceanAudio() {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      audioCtx = new AudioContext();
+
+      // Create pink noise buffer for warm oceanic surf sound
+      const bufferSize = audioCtx.sampleRate * 4;
+      const noiseBuffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      const output = noiseBuffer.getChannelData(0);
+      let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+      for (let i = 0; i < bufferSize; i++) {
+        const white = Math.random() * 2 - 1;
+        b0 = 0.99886 * b0 + white * 0.0555179;
+        b1 = 0.99332 * b1 + white * 0.0750759;
+        b2 = 0.96900 * b2 + white * 0.1538520;
+        b3 = 0.86650 * b3 + white * 0.3104856;
+        b4 = 0.55000 * b4 + white * 0.5329522;
+        b5 = -0.7616 * b5 - white * 0.0168980;
+        output[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 + white * 0.5362) * 0.07;
+        b6 = white * 0.115926;
+      }
+
+      // Loop white/pink noise
+      const noiseSource = audioCtx.createBufferSource();
+      noiseSource.buffer = noiseBuffer;
+      noiseSource.loop = true;
+
+      // Lowpass resonant filter mimicking water body
+      const waveFilter = audioCtx.createBiquadFilter();
+      waveFilter.type = 'lowpass';
+      waveFilter.frequency.setValueAtTime(320, audioCtx.currentTime);
+      waveFilter.Q.setValueAtTime(3.5, audioCtx.currentTime);
+
+      // Low Frequency Oscillator (LFO) for rhythmic swell cycles (7.5 seconds ocean wave cycle)
+      waveLfo = audioCtx.createOscillator();
+      waveLfo.type = 'sine';
+      waveLfo.frequency.setValueAtTime(0.13, audioCtx.currentTime); // ~7.7s per wave crest
+
+      const lfoGain = audioCtx.createGain();
+      lfoGain.gain.setValueAtTime(260, audioCtx.currentTime); // mod range 320 +/- 260 Hz
+      waveLfo.connect(lfoGain);
+      lfoGain.connect(waveFilter.frequency);
+
+      // Master Ocean Volume Gain
+      oceanGainNode = audioCtx.createGain();
+      oceanGainNode.gain.setValueAtTime(0.001, audioCtx.currentTime);
+
+      noiseSource.connect(waveFilter);
+      waveFilter.connect(oceanGainNode);
+      oceanGainNode.connect(audioCtx.destination);
+
+      noiseSource.start();
+      waveLfo.start();
+      oceanSources = [noiseSource, waveLfo];
+    }
+
+    async function toggleOceanSound() {
+      if (!(window.AudioContext || window.webkitAudioContext)) { oceanBtn.disabled=true; oceanBtn.setAttribute('aria-label','Audio unavailable in this browser'); return; }
+      try {
+      if (!audioCtx) {
+        initOceanAudio();
+      }
+
+      if (audioCtx.state !== 'running') {
+        await audioCtx.resume();
+      }
+
+      isPlayingOcean = !isPlayingOcean;
+
+      if (isPlayingOcean) {
+        oceanGainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+        oceanGainNode.gain.setValueAtTime(oceanGainNode.gain.value, audioCtx.currentTime);
+        oceanGainNode.gain.linearRampToValueAtTime(0.24, audioCtx.currentTime + 2.5); // Smooth gentle fade-in
+        oceanBtn.classList.add('playing');
+        oceanBtn.setAttribute('aria-pressed', 'true');
+      } else {
+        oceanGainNode.gain.cancelScheduledValues(audioCtx.currentTime);
+        oceanGainNode.gain.setValueAtTime(oceanGainNode.gain.value, audioCtx.currentTime);
+        oceanGainNode.gain.linearRampToValueAtTime(0.0001, audioCtx.currentTime + 1.8); // Smooth calm fade-out
+        oceanBtn.classList.remove('playing');
+        oceanBtn.setAttribute('aria-pressed', 'false');
+      }
+      } catch (_) { isPlayingOcean=false; oceanBtn.classList.remove('playing'); oceanBtn.setAttribute('aria-pressed','false'); oceanBtn.setAttribute('aria-label','Audio unavailable. Tap to retry.'); }
+    }
+
+    oceanBtn?.addEventListener('click', toggleOceanSound);
+
+    document.addEventListener('visibilitychange',()=>{ if(document.hidden && audioCtx) { audioCtx.suspend().catch(()=>{}); isPlayingOcean=false; oceanBtn.classList.remove('playing'); oceanBtn.setAttribute('aria-pressed','false'); } });
+    // I18N Dictionary
+    window.VASIRA_I18N = {
+      en: {
+        soundLabel: 'Waves',
+        navChallenge:'Challenge', navServices:'Services', navGallery:'World', navWhy:'Why Us', nav4:'Markets', nav5:'Contact',
+        heroTag:'DIGITAL MARKETING PARTNER · EGYPT & SAUDI ARABIA', hero1:'Your Partner in', hero2:'Digital Growth.',
+        heroSub:'We turn marketing from a daily operational task into a transparent, high-performing growth engine powered by strategy, data, and measurable business ROI.',
+        heroBtnServices:'Explore Solutions', heroBtnGallery:'Brand Identity World',
+        chalTag:'01 / MARKET CHALLENGE & RESOLUTION', chalTitle1:'Overcoming Marketing Friction.', chalTitle2:'The VASIRA System.',
+        chalDesc:'Brand owners face critical questions daily: Are ads profitable? Where does growth come from? Why isn\'t content engaging? VASIRA resolves these challenges through an end-to-end growth framework.',
+        c1h:'Paid Ads & Media Buying', c1p:'Precise funnel structuring, continuous A/B optimization, and retargeting that maximizes ROAS.',
+        c2h:'Engaging Content Engine', c2p:'Short-form videos (Reels, TikTok), hooks, copywriting, and storytelling that turns views into loyalty.',
+        c3h:'Growth & Analytics', c3p:'Transparent metrics, customer acquisition costs (CAC), conversion tracking, and data-driven insights.',
+        servTag:'02 / FULL-SERVICE MARKETING', servTitle1:'All Marketing Solutions.', servTitle2:'Under One Roof.',
+        servDesc:'A seamless, synchronized marketing suite giving every campaign, channel, and visual asset a unified direction.',
+        s1t:'Strategy', s1d:'Market Research • SWOT • STP • Personas • Brand Positioning',
+        s2t:'Social Media', s2d:'Full Management • Community Care • Editorial Calendar • Social Listening',
+        s3t:'Creative & Copy', s3d:'Brand Identity • Visual Key Concepts • Conversion Copywriting • Art Direction',
+        s4t:'Production', s4d:'Product & Lifestyle Photography • Commercial Video • Motion Graphics',
+        s5t:'Performance', s5d:'Media Buying • Meta, Google & TikTok Ads • Advanced Retargeting • ROAS Optimization',
+        s6t:'Search & Growth', s6d:'SEO Dominance • CRM Automations • Email Marketing • Influencer Partnerships',
+        workSmall:'03 / THE VASIRA WORLD', work1:'A visual world', work2:'that feels alive.',
+        workBody:'A moving gallery of VASIRA\'s original brand imagery. Every artwork is shown in full, exactly as designed.',
+        galleryNote:'These are VASIRA brand identity concepts, not client case studies.',
+        whyTag:'04 / WHY PARTNER WITH VASIRA', whyTitle1:'Creativity + Performance.', whyTitle2:'In Harmony.',
+        whyDesc:'We don\'t choose between aesthetic excellence and commercial conversion. We deliver both simultaneously through dedicated specialist talent.',
+        w1t:'Creativity Meets ROI', w1d:'Balancing aesthetic design with bottom-line revenue outcomes.',
+        w2t:'Data-Driven Insights', w2d:'Every decision originates from genuine customer intelligence and analytics.',
+        w3t:'Measurable Outcomes', w3d:'Clear business KPIs, verifiable leads, and sustainable brand equity.',
+        marLabel:'05 / MARKETS', mar1:'Egyptian instinct.', mar2:'Saudi ambition.',
+        marBody:'VASIRA bridges regional cultural intelligence. We combine dynamic cultural resonance in Egypt with high-tier prestige positioning in Saudi Arabia.',
+        egypt:'Egypt', egyptBody:'Fast-paced, culturally fluent digital narratives and agile execution that captures broad engagement.',
+        saudi:'Saudi Arabia', saudiBody:'Elevated, visionary creative systems engineered to resonate with the Kingdom\'s thriving enterprise market.',
+        contactLabel:'06 / LET\'S GROW TOGETHER', contact1:'Let\'s build your next', contact2:'success story.',
+        contactBody:'You have the vision. We have the strategic expertise and execution engine to make it a reality.',
+        footer:'GROWTH BEGINS WITH VISION'
+      },
+      ar: {
+        soundLabel: 'صوت البحر',
+        navChallenge:'التحدي والحل', navServices:'خدماتنا', navGallery:'عالم فاسيرا', navWhy:'لماذا فاسيرا', nav4:'الأسواق', nav5:'تواصل معنا',
+        heroTag:'شريكك في النمو الرقمي · مصر والمملكة العربية السعودية', hero1:'شريكك في', hero2:'النمو الرقمي.',
+        heroSub:'نحوّل التسويق من مهمة يومية إلى منظومة نمو واضحة، مبنية على استراتيجية وبيانات ونتائج قابلة للقياس.',
+        heroBtnServices:'استكشف حلولنا', heroBtnGallery:'عالم الهوية البصرية',
+        chalTag:'01 / التحدي والحل', chalTitle1:'تجاوز عقبات التسويق.', chalTitle2:'منظومة VASIRA المتكاملة.',
+        chalDesc:'يواجه أصحاب البراندات يومياً أسئلة مصيرية: هل الإعلانات تحقق نتائج؟ من أين يأتي النمو؟ لماذا لا يؤثر المحتوى؟ فاسيرا تقدم الإجابة بحلول عملية موثقة.',
+        c1h:'إعلانات ذكية وMedia Buying', c1p:'هيكلة الحملات والـ Funnels والتحسين المستمر لتحقيق أعلى ROAS وعائد استثماري.',
+        c2h:'صناعة محتوى تفاعلي', c2p:'فيديوهات قصيرة (Reels وTikTok) وكتابة إعلانية تصنع فارقاً حقيقياً مع الجمهور.',
+        c3h:'قياس الأداء والنمو', c3p:'أرقام واضحة وتقارير تنفيذية: تكلفة الاستحواذ (CAC) ومعدل التحويل (CRO).',
+        servTag:'02 / باقة الخدمات المتكاملة', servTitle1:'كل خدمات التسويق..', servTitle2:'تحت سقف واحد.',
+        servDesc:'منظومة تسويقية متكاملة تغطي كل ما يحتاجه براندك للنمو والريادة عبر كافة القنوات.',
+        s1t:'الاستراتيجية', s1d:'Market Research • SWOT • STP • Personas • Brand Positioning',
+        s2t:'السوشيال ميديا', s2d:'إدارة الحسابات • إدارة المجتمع • تقويم المحتوى • Social Listening',
+        s3t:'الإبداع والتصميم', s3d:'الهوية البصرية • الـ Key Visuals • كتابة الإعلانات • Creative Direction',
+        s4t:'الإنتاج والتصوير', s4d:'تصوير المنتجات • تصوير Lifestyle • إنتاج إعلاني • Motion Graphics',
+        s5t:'الإعلانات الممولة', s5d:'Media Buying • إعلانات Meta وGoogle وTikTok • إعادة الاستهداف • ROAS',
+        s6t:'البحث والنمو', s6d:'SEO محركات البحث • أتمتة CRM • Email Marketing • حملات المؤثرين',
+        workSmall:'03 / عالم فاسيرا', work1:'هوية بصرية', work2:'مليانة حياة.',
+        workBody:'جاليري متحرك بيعرض صور هوية فاسيرا الأصلية كاملة بدون قصّ أو تشويش.',
+        galleryNote:'دي تصميمات هوية VASIRA نفسها، مش نتائج شغل مع عملاء.',
+        whyTag:'04 / لماذا VASIRA؟', whyTitle1:'إبداع فني + أداء تجاري', whyTitle2:'في نقطة واحدة.',
+        whyDesc:'لا نكتفي بالمظهر الجمالي فقط؛ بل نوازن بين سحر الإبداع وتحقيق أهداف البزنس والمبيعات.',
+        w1t:'إبداع + أداء معاً', w1d:'نوازن بين جمال المحتوى الجذاب ونتائج البزنس الحقيقية.',
+        w2t:'استراتيجيات مبنية على بيانات', w2d:'كل خطوة وقرار يبدأ من Insight حقيقي وتحليل عميق.',
+        w3t:'نتائج حقيقية ملموسة', w3d:'مؤشرات أداء واضحة (KPIs) وليست مجرد أرقام وصول عابرة.',
+        marLabel:'05 / الأسواق', mar1:'حسّ مصري أصيل.', mar2:'وطموح سعودي واعد.',
+        marBody:'تجمع فاسيرا بين الذكاء الثقافي المحلي والخبرة الإقليمية — تفاعل وسرعة في السوق المصري، وفخامة وتموضع رفيع في السوق السعودي.',
+        egypt:'مصر', egyptBody:'سرد قصصي مبتكر وسريع يواكب نبض الشارع الرقمي ويزيد التفاعل.',
+        saudi:'المملكة العربية السعودية', saudiBody:'تجارب إبداعية راقية وحلول استراتيجية تناسب تطلعات وتوسع المشاريع الكبرى بالمملكة.',
+        contactLabel:'06 / دعنا ننمو معاً', contact1:'دعنا نبني', contact2:'قصة نجاحك القادمة.',
+        contactBody:'أنت لديك الرؤية.. ونحن لدينا الخبرة والمنظومة لتنفيذها على أرض الواقع.',
+        footer:'النمو يبدأ بالرؤية'
+      }
+    };
+
+    // Navigation and Visibility Observer
+    const surfaces = document.querySelectorAll('.surface-viewport');
+    const dots = document.querySelectorAll('.deck-dot');
+    const navAnchors = document.querySelectorAll('.desktop-nav a');
+
+    surfaces.forEach(s => s.classList.add('is-visible'));
+    let scrollQueued = false;
+    function updateNavigation() {
+      let current = surfaces[0];
+      surfaces.forEach(section => { if(section.getBoundingClientRect().top <= Math.min(innerHeight * .35,240)) current=section; });
+      document.querySelectorAll('.desktop-nav a,.mob-tab-btn,.deck-dot').forEach(control => {
+        const selected=(control.dataset.target || control.getAttribute('href')?.slice(1)) === current.id;
+        control.classList.toggle('active',selected);
+        if(selected) control.setAttribute('aria-current','location'); else control.removeAttribute('aria-current');
+      });
+      scrollQueued=false;
+    }
+    addEventListener('scroll',()=>{ if(!scrollQueued){ scrollQueued=true; requestAnimationFrame(updateNavigation); } },{passive:true});
+    addEventListener('resize',updateNavigation); updateNavigation();
+
+    dots.forEach(d => {
+      d.addEventListener('click', () => {
+        const target = document.getElementById(d.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Mobile Hamburger Navigation
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileSheet = document.getElementById('mobileSheet');
+    if (mobileBtn && mobileSheet) {
+      const closeMenu=()=>{ mobileSheet.classList.remove('open'); mobileBtn.classList.remove('active'); mobileBtn.setAttribute('aria-expanded','false'); };
+      document.addEventListener('keydown',e=>{ if(e.key==='Escape' && mobileSheet.classList.contains('open')) { closeMenu(); mobileBtn.focus(); } });
+      document.addEventListener('click',e=>{ if(!mobileSheet.contains(e.target) && !mobileBtn.contains(e.target)) closeMenu(); });
+      addEventListener('resize',()=>{ if(innerWidth>=1280) closeMenu(); });
+      mobileBtn.addEventListener('click', () => {
+        const isOpen = mobileSheet.classList.toggle('open');
+        mobileBtn.classList.toggle('active', isOpen);
+        mobileBtn.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      document.querySelectorAll('.m-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileSheet.classList.remove('open');
+          mobileBtn.classList.remove('active');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Full Image Cinematic Gallery Controller
+    const galleryTrack = document.getElementById('galleryTrack');
+    const slides = document.querySelectorAll('.cinematic-slide');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+    const counterDisplay = document.getElementById('slideCurrent');
+    const progressPillsContainer = document.getElementById('galleryProgressPills');
+    let activeSlide = 0;
+    let galleryAutoplay;
+
+    if (galleryTrack && slides.length) {
+      slides.forEach((_, i) => {
+        const pill = document.createElement('button');
+        pill.type='button'; pill.setAttribute('aria-label',`Show artwork ${i+1}`); pill.setAttribute('aria-pressed',String(i===0));
+        pill.classList.add('gallery-bar-btn');
+        if (i === 0) pill.classList.add('active');
+        pill.addEventListener('click', () => {
+          goToSlide(i);
+          resetAutoplay();
+        });
+        progressPillsContainer.appendChild(pill);
+      });
+
+      function goToSlide(index) {
+        activeSlide = (index + slides.length) % slides.length;
+        galleryTrack.style.transform = `translate3d(-${activeSlide * 100}%, 0, 0)`;
+        if (counterDisplay) {
+          counterDisplay.textContent = String(activeSlide + 1).padStart(2, '0');
+        }
+        document.querySelectorAll('.gallery-bar-btn').forEach((btn, i) => {
+          btn.classList.toggle('active', i === activeSlide);
+          btn.setAttribute('aria-pressed',String(i===activeSlide));
+        });
+      }
+
+      let autoplayPaused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const pauseButton=document.createElement('button'); pauseButton.type='button'; pauseButton.className='gallery-pause';
+      const syncPause=()=>{ pauseButton.textContent=document.documentElement.lang==='ar' ? (autoplayPaused?'تشغيل':'إيقاف مؤقت') : (autoplayPaused?'Play':'Pause'); pauseButton.setAttribute('aria-pressed',String(autoplayPaused)); };
+      pauseButton.addEventListener('click',()=>{ autoplayPaused=!autoplayPaused; syncPause(); resetAutoplay(); });
+      document.querySelector('.gallery-controls-bottom').appendChild(pauseButton); syncPause();
+      document.addEventListener('vasira:language',syncPause);
+      document.addEventListener('visibilitychange',resetAutoplay);
+      function resetAutoplay() {
+        clearInterval(galleryAutoplay);
+        if(autoplayPaused || document.hidden) return;
+        galleryAutoplay = setInterval(() => {
+          goToSlide(activeSlide + 1);
+        }, 6000);
+      }
+
+      prevBtn?.addEventListener('click', () => {
+        goToSlide(activeSlide - 1);
+        resetAutoplay();
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        goToSlide(activeSlide + 1);
+        resetAutoplay();
+      });
+
+      let touchStartX = 0;
+      let touchStartY = 0;
+      const viewport = document.getElementById('galleryViewport');
+
+      viewport?.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
+
+      viewport?.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const touchEndY = e.changedTouches[0].clientY;
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 35) {
+          if (diffX > 0) {
+            goToSlide(activeSlide + 1);
+          } else {
+            goToSlide(activeSlide - 1);
+          }
+          resetAutoplay();
+        }
+      }, { passive: true });
+
+      resetAutoplay();
+    }
+
+    // Language switcher
+    let currentLang = 'en';
+    const langBtn = document.getElementById('langBtn');
+    function applyLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      
+      const t = window.VASIRA_I18N[lang];
+      document.querySelectorAll('[data-t]').forEach(el => {
+        const key = el.dataset.t;
+        if (t[key]) el.textContent = t[key];
+      });
+      langBtn.textContent = lang === 'ar' ? 'EN' : 'عربي';
+      safeStorage.set('vasira_lang',lang); document.dispatchEvent(new Event('vasira:language'));
+    }
+    langBtn.addEventListener('click', () => applyLang(currentLang === 'en' ? 'ar' : 'en'));
+
+    applyLang(safeStorage.get('vasira_lang')==='ar'?'ar':'en');
+    // Year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
